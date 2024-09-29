@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #0c0c0c;
     line-height: 1.6;
 }
 
@@ -20,9 +20,20 @@ body {
 header {
     background-color: #f8f8f8;
     padding: 10px 0;
+    display: flex; /* Ensures header elements are in a row */
+    justify-content: space-between; /* Space between logo/text and nav/button */
+    align-items: center; /* Center align items vertically */
+}
+
+.logo-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Align logo and text vertically */
+}
+
+.logo-img {
+    width: 50px; /* Adjust the size of your logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
 }
 
 .logo {
@@ -30,9 +41,14 @@ header {
     color: #ff7c00;
 }
 
+nav {
+    flex-grow: 1; /* Allow nav to grow and fill space */
+}
+
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex; /* Display nav items in a row */
+    justify-content: flex-end; /* Align nav items to the right */
 }
 
 nav ul li {
@@ -66,7 +82,7 @@ nav ul li a {
 }
 
 .hero h2 {
-    color: white;
+    color: black;
     font-size: 48px;
 }
 
@@ -80,7 +96,10 @@ nav ul li a {
 }
 
 /* Section styling */
-.about-section, .dishes-section, .chef-section, .menu-section {
+.about-section,
+.dishes-section,
+.chef-section,
+.menu-section {
     padding: 60px 0;
     text-align: center;
 }
@@ -106,6 +125,17 @@ nav ul li a {
     width: 200px;
     height: auto;
     border-radius: 50%;
+}
+
+/* Newsletter subscription section */
+.newsletter-section {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 40px 0; /* Padding for the section */
+    text-align: center; /* Center align text */
+}
+
+.newsletter-section h2 {
+    margin-bottom: 20px; /* Margin for the heading */
 }
 
 /* Footer styles */
@@ -172,6 +202,7 @@ footer {
     border: none;
     border-radius: 5px;
     margin-right: 10px;
+    width: 250px; /* Width for input */
 }
 
 #subscribe-form button {

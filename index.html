@@ -10,24 +10,28 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">Taste of Ceylon</h1>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <h1 class="logo-text">Taste of Ceylon</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#dishes">Dishes</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#book" class="book-table">Book a Table</a>
+            <a href="book.html" class="book-table">Book a Table</a>
         </div>
     </header>
+    
 
     <section id="home">
         <div class="hero">
-            <h2>We provide the best food for you</h2>
-            <a href="#menu" class="btn">Explore Menu</a>
+            <h2>We provide the best Food for you</h2>
+            <a href="menu.html" class="btn">Explore Menu</a>
         </div>
     </section>
 
@@ -68,6 +72,16 @@
         </div>
     </section>
 
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Get Promo Code by Subscribing to Our Newsletter</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container footer-content">
             <div class="footer-description">
@@ -78,18 +92,18 @@
             <div class="footer-navigation">
                 <h3>Navigation</h3>
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#dishes">Dishes</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-dishes">
                 <h3>Popular Dishes</h3>
                 <ul>
-                    <li>Special Dish 1</li>
-                    <li>Special Dish 2</li>
-                    <li>Special Dish 3</li>
+                    <li>Ceylon Special Mix Pizza</li>
+                    <li>Ceylon Special Burger Combo</li>
+                    <li>Ceylon Special Fried Rice</li>
                 </ul>
             </div>
             <div class="footer-social">
@@ -100,14 +114,6 @@
                     <li><a href="#">Twitter</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="container">
-            <h2>Get Promo Code by Subscribing to Our Newsletter</h2>
-            <form id="subscribe-form">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
         </div>
 
         <div class="footer-bottom">
