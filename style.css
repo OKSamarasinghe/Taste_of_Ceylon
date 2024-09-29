@@ -1,0 +1,188 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ff7c00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.book-table {
+    background-color: #ff7c00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+    height: 400px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 48px;
+}
+
+.hero .btn {
+    background-color: #ff7c00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Section styling */
+.about-section, .dishes-section, .chef-section, .menu-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.dishes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dish img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.chef-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chef-info img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-align: left;
+}
+
+.footer-content div {
+    width: 23%;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+    color: #ff7c00;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social .social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Newsletter subscription form */
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#subscribe-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#subscribe-form button {
+    background-color: #ff7c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#subscribe-form button:hover {
+    background-color: #e56c00;
+}
