@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #0c0c0c;
+    color: black;
     line-height: 1.6;
 }
 
@@ -20,9 +20,13 @@ body {
 header {
     background-color: #f8f8f8;
     padding: 10px 0;
-    display: flex; /* Ensures header elements are in a row */
-    justify-content: space-between; /* Space between logo/text and nav/button */
-    align-items: center; /* Center align items vertically */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Align logo on left, navbar on right */
+    align-items: center;
+    width: 100%;
 }
 
 .logo-container {
@@ -36,43 +40,41 @@ header {
     margin-right: 10px; /* Space between logo and text */
 }
 
-.logo {
+.logo-text {
     font-size: 24px;
     color: #ff7c00;
+    font-weight: bold;
 }
 
 nav {
-    flex-grow: 1; /* Allow nav to grow and fill space */
+    margin-right: 30px; /* Adds space between the navbar and the edge */
 }
 
 nav ul {
     list-style: none;
     display: flex; /* Display nav items in a row */
-    justify-content: flex-end; /* Align nav items to the right */
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: black; /* Default link color */
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-.book-table {
-    background-color: #ff7c00;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+/* Hover effect for navbar links */
+nav ul li a:hover {
+    color: #ff7c00; /* Change to orange when hovered */
 }
 
 /* Hero section */
 .hero {
-    height: 400px;
-    background-image: url('images/hero.jpg');
+    height: 450px;
+    background-image: url('images/hero1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -81,18 +83,15 @@ nav ul li a {
     text-align: center;
 }
 
-.hero h2 {
-    color: black;
-    font-size: 48px;
-}
-
 .hero .btn {
     background-color: #ff7c00;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    border-radius: 55px;
+    margin-top: -380px;
+    margin-left: 1230px;
+    font-size: 15px;
 }
 
 /* Section styling */
