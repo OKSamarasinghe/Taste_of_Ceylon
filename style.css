@@ -1,0 +1,218 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Align logo on left, navbar on right */
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+}
+
+.logo-img {
+    width: 50px; /* Adjust the size of your logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #ff7c00;
+    font-weight: bold;
+}
+
+nav {
+    margin-right: 30px; /* Adds space between the navbar and the edge */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Display nav items in a row */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Default link color */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+    color: #ff7c00; /* Change to orange when hovered */
+}
+
+/* Hero section */
+.hero {
+    height: 450px;
+    background-image: url('images/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .btn {
+    background-color: #ff7c00;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 55px;
+    margin-top: -380px;
+    margin-left: 1230px;
+    font-size: 15px;
+}
+
+/* Section styling */
+.about-section,
+.dishes-section,
+.chef-section,
+.menu-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.dishes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dish img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.chef-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chef-info img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Newsletter subscription section */
+.newsletter-section {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 40px 0; /* Padding for the section */
+    text-align: center; /* Center align text */
+}
+
+.newsletter-section h2 {
+    margin-bottom: 20px; /* Margin for the heading */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-align: left;
+}
+
+.footer-content div {
+    width: 23%;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+    color: #ff7c00;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social .social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Newsletter subscription form */
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#subscribe-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px; /* Width for input */
+}
+
+#subscribe-form button {
+    background-color: #ff7c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#subscribe-form button:hover {
+    background-color: #e56c00;
+}
