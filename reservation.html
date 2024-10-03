@@ -1,1 +1,135 @@
-<h1>reservation</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Taste of Ceylon</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <h1 class="logo-text">Taste of Ceylon</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="reservation.html" class="active">Reservation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- First Section -->
+    <section class="reservation-intro">
+        <div class="reservation-content">
+            <div class="reservation-left">
+                <img src="images/reservation1.jpg" alt="Restaurant Image 1">
+            </div>
+            <div class="reservation-right">
+                <h2>It's time to enjoy Authentic Sri Lankan Cuisine</h2>
+                <p>
+                    We take reservations for lunch and dinner. To make a reservation, please call us between 10am-6pm, Monday to Friday.
+                </p>
+                <p>
+                    We do not book the bar area - we leave this for walk-in guests to ensure that we always offer some tables for those who have not booked.
+                </p>
+                <p class="phone-number">
+                    (+94) 523456789
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="reservation-form-section">
+        <h2>Book a Table</h2>
+        <form action="#" method="post" class="reservation-form">
+            <div class="form-group">
+                <label for="name">Your Name*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone*</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">DD/MM/YYYY*</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time*</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="persons">Person*</label>
+                <input type="number" id="persons" name="persons" required min="1" max="20">
+            </div>
+            <div class="form-group">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">BOOK NOW</button>
+        </form>
+    </section>
+
+    <!-- Third Section -->
+    <section class="private-dining-section">
+        <h2>PRIVATE DINING & EVENTS</h2>
+        <p>We are here to make your special day a truly memorable one.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-description">
+                <h3>About Taste of Ceylon</h3>
+                <p>At Taste of Ceylon, we serve the most authentic Sri Lankan dishes made with fresh, organic ingredients.</p></br>
+                <p><strong>Opening Hours:</strong><br>Mon-Fri: 8 AM - 11 PM<br>Sat-Sun: 10 AM - 11 PM</p>
+            </div>
+            <div class="footer-navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-dishes">
+                <h3>Popular Dishes</h3>
+                <ul>
+                    <li>Ceylon Special Mix Pizza</li>
+                    <li>Ceylon Special Burger Combo</li>
+                    <li>Ceylon Special Fried Rice</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook </a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Oshadha K. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
