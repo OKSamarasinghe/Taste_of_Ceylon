@@ -22,22 +22,22 @@ header {
     padding: 10px 0;
 }
 
-.container {
+header .container {
     display: flex;
-    justify-content: space-between; /* Align logo on left, navbar on right */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .logo-container {
     display: flex;
-    align-items: center; /* Align logo and text vertically */
+    align-items: center;
 }
 
 .logo-img {
-    width: 50px; /* Adjust the size of your logo */
+    width: 50px;
     height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between logo and text */
+    margin-right: 10px;
 }
 
 .logo-text {
@@ -46,13 +46,9 @@ header {
     font-weight: bold;
 }
 
-nav {
-    margin-right: 30px; /* Adds space between the navbar and the edge */
-}
-
 nav ul {
     list-style: none;
-    display: flex; /* Display nav items in a row */
+    display: flex;
 }
 
 nav ul li {
@@ -61,14 +57,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black; /* Default link color */
+    color: black;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease;
 }
 
-/* Hover effect for navbar links */
-nav ul li a:hover {
-    color: #ff7c00; /* Change to orange when hovered */
+nav ul li a.active, nav ul li a:hover {
+    color: #ff7c00;
+}
+
+nav {
+    margin-right: 30px; /* Adds space between the navbar and the edge */
 }
 
 /* Hero section */
@@ -251,7 +250,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: start;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-content div {

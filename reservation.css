@@ -26,6 +26,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo-container {
@@ -35,6 +36,7 @@ header .container {
 
 .logo-img {
     width: 50px;
+    height: auto; /* Maintain aspect ratio */
     margin-right: 10px;
 }
 
@@ -62,6 +64,10 @@ nav ul li a {
 
 nav ul li a.active, nav ul li a:hover {
     color: #ff7c00;
+}
+
+nav {
+    margin-right: 30px; /* Adds space between the navbar and the edge */
 }
 
 /* Reservation Intro Section */
@@ -191,7 +197,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: start;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-content div {

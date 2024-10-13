@@ -1,0 +1,297 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #ff7c00;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #ff7c00;
+}
+
+nav {
+    margin-right: 30px; /* Adds space between the navbar and the edge */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-align: center;
+}
+
+.footer-content div {
+    width: 23%;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+    color: #ff7c00;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social .social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Hero Section */
+.about-hero {
+    background-image: url('images/about-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+/* Our Story Section */
+.our-story {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.our-story h2 {
+    font-size: 36px;
+    color: #ff7c00;
+    margin-bottom: 20px;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story-text {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.story-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.mission-vision-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission, .vision {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.mission h3, .vision h3 {
+    color: #ff7c00;
+    margin-bottom: 10px;
+}
+
+/* Meet the Team Section */
+.team {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 36px;
+    color: #ff7c00;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-card {
+    text-align: center;
+    width: 30%;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.team-card h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    color: #ff7c00;
+    margin-bottom: 20px;
+}
+
+.choose-us-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-us-item {
+    width: 30%;
+}
+
+.choose-us-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.choose-us-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    color: #ff7c00;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);}
