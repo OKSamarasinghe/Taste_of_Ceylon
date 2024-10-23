@@ -70,6 +70,88 @@ nav {
     margin-right: 30px; /* Adds space between the navbar and the edge */
 }
 
+/* Contact Section Styles */
+.contact-section {
+    background-color: #f8f8f8; /* Light gray background for the contact section */
+    padding: 40px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #ff7c00; /* Header color */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form {
+    width: 48%; /* Width for the contact form */
+}
+
+.map-container {
+    width: 48%; /* Width for the map container */
+}
+
+.contact-form h3, .map-container h3 {
+    font-size: 24px;
+    color: #ff7c00; /* Heading color */
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Border for input and textarea */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+    width: 100%; /* Full width */
+}
+
+.submit-btn {
+    background-color: #ff7c00; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size for the button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-btn:hover {
+    background-color: #e06e00; /* Darker orange on hover */
+}
+
+/* Google Map Styles */
+.map-container iframe {
+    border: 0; /* No border for the iframe */
+}
+
+
 /* Footer styles */
 footer {
     background-color: #333;
