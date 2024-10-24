@@ -122,3 +122,35 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
+
+
+/* Hero Section */
+.about-hero {
+    background-image: url('images/contactus.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
