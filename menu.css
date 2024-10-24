@@ -154,3 +154,69 @@ footer {
 .hero-content p {
     font-size: 24px;
 }
+
+
+
+.menu-section {
+    padding: 30px;
+    
+  }
+
+.menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ff6600;
+
+  }
+  
+  .menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .menu-column {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .menu-img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .menu-details {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .menu-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-details p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .menu-price {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+  }
+  
