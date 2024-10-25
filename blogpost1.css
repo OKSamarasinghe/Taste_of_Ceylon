@@ -1,0 +1,174 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #ff7c00;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #ff7c00;
+}
+
+nav {
+    margin-right: 30px; /* Adds space between the navbar and the edge */
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-align: center;
+}
+
+.footer-content div {
+    width: 23%;
+}
+
+.footer-content h3 {
+    margin-bottom: 15px;
+    color: #ff7c00;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social .social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Spices Section styles */
+.spices-section {
+    background-color: #f2f2f2; /* Light background color */
+    padding: 40px 0; /* Vertical padding */
+    text-align: center; /* Center text */
+}
+
+.spices-section h2 {
+    font-size: 32px; /* Heading size */
+    color: #ff7c00; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.spices-section p {
+    font-size: 18px; /* Paragraph size */
+    color: #333; /* Paragraph color */
+    line-height: 1.5; /* Line height */
+    max-width: 800px; /* Maximum width for the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+    margin-bottom: 50px;
+}
+
+.spice-item {
+    margin: 20px 0; /* Space around each spice item */
+}
+
+.spice-img {
+    width: 100%; /* Responsive image */
+    max-width: 300px; /* Maximum width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.spice-item h3 {
+    font-size: 22px; /* Spice name size */
+    color: #ff7c00; /* Spice name color */
+    margin: 10px 0; /* Space around spice name */
+}
+
+.spice-item p {
+    font-size: 16px; /* Description size */
+    color: #555; /* Description color */
+    max-width: 600px; /* Maximum width for descriptions */
+    margin: 0 auto; /* Center descriptions */
+    margin-bottom: 70px;
+}

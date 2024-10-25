@@ -85,7 +85,7 @@ nav {
 }
 
 .reservation-right {
-    margin-left: 250px;
+    margin-left: 350px;
 }
 
 .reservation-right h2 {
@@ -107,6 +107,7 @@ nav {
     font-weight: bold;
     color: #333;
     font-size: 20px;
+    margin-right: 70px;
 }
 
 /* Reservation Form Section */

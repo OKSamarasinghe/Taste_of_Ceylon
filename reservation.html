@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation - Taste of Ceylon</title>
     <link rel="stylesheet" href="reservation.css">
+    <script>
+        // JavaScript validation for phone number format
+        function validateForm(event) {
+            const phoneInput = document.getElementById('phone').value;
+            const phonePattern = /^\d{10}$/;
+
+            if (!phonePattern.test(phoneInput)) {
+                alert("Please enter a valid 10-digit phone number.");
+                event.preventDefault();  // Prevent form submission if phone is invalid
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -23,12 +35,12 @@
                     <li><a href="reservation.html">Reservation</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
-
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="about-hero">
         <div class="overlay">
             <div class="hero-content">
@@ -38,29 +50,22 @@
         </div>
     </section>
 
-    <!-- First Section -->
+    <!-- Reservation Information Section -->
     <section class="reservation-intro">
         <div class="reservation-content">
-            
             <div class="reservation-right">
                 <h2>It's time to enjoy Authentic Sri Lankan Cuisine</h2>
-                <p>
-                    We take reservations for lunch and dinner. To make a reservation, please call us between 10am-6pm, Monday to Friday.
-                </p>
-                <p>
-                    We do not book the bar area - we leave this for walk-in guests to ensure that we always offer some tables for those who have not booked.
-                </p>
-                <p class="phone-number">
-                    (+94) 523456789
-                </p>
+                <p>We take reservations for lunch and dinner. To make a reservation, please call us between 10am-6pm, Monday to Friday.</p>
+                <p>We do not book the bar area - we leave this for walk-in guests to ensure availability for those without reservations.</p>
+                <p class="phone-number">(+94) 766392356</p>
             </div>
         </div>
     </section>
 
-    <!-- Second Section -->
+    <!-- Reservation Form Section -->
     <section class="reservation-form-section">
         <h2>Book a Table</h2>
-        <form action="#" method="post" class="reservation-form">
+        <form action="submit_reservation.php" method="post" class="reservation-form" onsubmit="validateForm(event)">
             <div class="form-group">
                 <label for="name">Your Name*</label>
                 <input type="text" id="name" name="name" required>
@@ -93,17 +98,21 @@
         </form>
     </section>
 
-    <!-- Third Section -->
+    <!-- Private Dining Section -->
     <section class="private-dining-section">
         <h2>PRIVATE DINING & EVENTS</h2>
         <p>We are here to make your special day a truly memorable one.</p>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-content">
             <div class="footer-description">
                 <h3>About Taste of Ceylon</h3>
-                <p>At Taste of Ceylon, we serve the most authentic Sri Lankan dishes made with fresh, organic ingredients.</p></br>
+                <p>At Taste of Ceylon, we serve the most authentic Sri Lankan dishes made with fresh, organic ingredients.</p><br/>
+                <p>24/A Backer Street Colombo 7</p>
+                <p>(+94) 766392356</p>
+                <p>tasteCeylon@to.lk</p><br/>
                 <p><strong>Opening Hours:</strong><br>Mon-Fri: 8 AM - 11 PM<br>Sat-Sun: 10 AM - 11 PM</p>
             </div>
             <div class="footer-navigation">
@@ -114,7 +123,6 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="reservation.html">Reservation</a></li>
-
                 </ul>
             </div>
             <div class="footer-dishes">
@@ -128,8 +136,8 @@
             <div class="footer-social">
                 <h3>Follow Us</h3>
                 <ul class="social-links">
-                    <li><a href="#">Facebook </a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li><br/>
+                    <li><a href="#">Instagram</a></li><br/>
                     <li><a href="#">Twitter</a></li>
                 </ul>
             </div>
