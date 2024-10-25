@@ -6,14 +6,44 @@
     <title>Reservation - Taste of Ceylon</title>
     <link rel="stylesheet" href="reservation.css">
     <script>
-        // JavaScript validation for phone number format
+        // JavaScript validation function
         function validateForm(event) {
+            const nameInput = document.getElementById('name').value;
+            const emailInput = document.getElementById('email').value;
             const phoneInput = document.getElementById('phone').value;
+            const dateInput = document.getElementById('date').value;
+            const timeInput = document.getElementById('time').value;
+            const personsInput = document.getElementById('persons').value;
+            const messageInput = document.getElementById('message').value;
+            
+            // Regular expressions
+            const namePattern = /^[A-Za-z\s]+$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             const phonePattern = /^\d{10}$/;
 
+            // Validation checks
+            if (!nameInput || !emailInput || !phoneInput || !dateInput || !timeInput || !personsInput || !messageInput) {
+                alert("All fields must be filled.");
+                event.preventDefault();  // Prevent form submission
+                return;
+            }
+
+            if (!namePattern.test(nameInput)) {
+                alert("Your Name must contain only letters.");
+                event.preventDefault();
+                return;
+            }
+
+            if (!emailPattern.test(emailInput)) {
+                alert("Please enter a valid Email Address.");
+                event.preventDefault();
+                return;
+            }
+
             if (!phonePattern.test(phoneInput)) {
-                alert("Please enter a valid 10-digit phone number.");
-                event.preventDefault();  // Prevent form submission if phone is invalid
+                alert("Phone must contain exactly 10 digits.");
+                event.preventDefault();
+                return;
             }
         }
     </script>
