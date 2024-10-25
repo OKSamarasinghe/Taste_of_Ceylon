@@ -155,3 +155,89 @@ footer {
 .hero-content p {
     font-size: 24px;
 }
+
+
+.menu-section {
+    padding: 40px;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ff6600;
+}
+
+.menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -50px;
+}
+
+.menu-column {
+    flex-basis: 48%; /* Each column takes 48% width of the container */
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns image and text vertically */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Adds hover effect to lift item */
+}
+
+.menu-img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+}
+
+.menu-details {
+    flex-grow: 1;
+    padding: 20px; /* Adjusted padding for a better look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-details h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.menu-details p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-price {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .menu-column {
+        flex-basis: 100%; /* For smaller screens, make columns full width */
+    }
+    .menu-img {
+        width: 40%; /* Adjust the image width on smaller screens */
+    }
+}
